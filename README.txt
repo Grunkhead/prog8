@@ -11,7 +11,7 @@ After you downloaded the files go to the folder and run 'npm install' to install
 - Webcam
 
 # Demo
-You can see the running demo on https://stud.hosted.hr.nl/0947334/prog8, this might be taken offline in the future.
+You can see the running demo on https://grunkhead.github.io/prog8/, this might be taken offline in the future.
 
 # Saving the trained model
 You can save the model by pressing the key '/', after that there will be a prompt to save the file locally on your computer. You can load this xxxx.json model inside the code where knn.load(xxxx) is.
