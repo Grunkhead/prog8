@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Automotive kNear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="message">Well done, the pilot landed safely!</div>
+
+    <div class="container">
+        <div class="info">
+            <h1>Helicopter Marshalling Training Center</h1>
+            <p>Oh no! The pilot of the helicopter is unconscious, you need to teach the passenger to land the helicopter with your instructions.</p>
+            <b>By pressing the following keys while having a pose in the camera will teach the passenger your instructions.</b>
+            <ul>
+                <li>W: To teach the pilot the pose to go UP</li>
+                <li>A: To teach the pilot the pose to go LEFT</li>
+                <li>S: To teach the pilot the pose to go DOWN</li>
+                <li>D: To teach the pilot the pose to go RIGHT</li>
+                <li>E: To teach the pilot the pose to STOP</li>
+            </ul>
+            <b>If you think he understands your instructions, you can make him land safely on the platform by using those instructions.</b><br>
+            <b>But beware, do not make him confused with complex instructions. He might get confused!</b>
+            <h2>Currently there is a pretrained model running, so you are unable to teach things.</h2>
+            <p>Stand up in front of the camera while holding a keyboard like thing. Hold it left to go left, hold it above your head to go up, hold it near your pants to go down. Hold it against your chest to stop the helicopter.</p>
+        </div>
+        <div>
+            <canvas class="myCanvas" id="myCanvas" width="500" height="500" style="background: url('images/background.jpg')"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.2.1/dist/ml5.min.js"></script>
+
+    <script src="classes/helicopter.js"></script>
+    <script src="classes/helipad.js"></script>
+    <script src="knn.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
